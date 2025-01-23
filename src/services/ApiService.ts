@@ -36,11 +36,11 @@ export const ApiService = {
                             const endDate = item[1];
 
                             while (currentDate.isBefore(endDate) || currentDate.isSame(endDate, 'day')) {
-                                unavailable_days.push(currentDate.toDate());
+                                unavailable_days.push(currentDate.add(1, 'day') .toDate());
                                 currentDate = currentDate.add(1, 'day');
                             }
                         } else {
-                            unavailable_days.push(item.toDate());
+                            unavailable_days.push(item.add(1, 'day').toDate());
                         }
 
                         return unavailable_days;
