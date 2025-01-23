@@ -39,11 +39,13 @@ export default function PersonRow({personIndex, person}: PersonRowProps) {
                 <Row>
                     <Col xs={11}>
                         <Row className='square border border-3 border-dark rounded-4'>
-                            <Col lg={4} className='square border-3 border-end border-dark d-flex align-items-center' >
+                            <Col lg={4} className='square border-3 border-end
+                            border-dark d-flex align-items-center p-0' >
                                 <Form.Control
                                     type='text'
                                     placeholder='Person name'
                                     value={person.name}
+                                    className='rounded-start-4 rounded-end-0'
                                     onChange={(event) =>
                                         dispatch(scheduleParametersActions.updatePersonName(
                                             {personIndex: personIndex, newName: event.target.value}))}

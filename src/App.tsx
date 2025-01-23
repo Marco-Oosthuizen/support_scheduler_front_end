@@ -39,13 +39,12 @@ function App() {
         <PersonsContainer></PersonsContainer>
 
         <Stack>
-            <Button variant="primary" className='mt-4 w-25 mx-auto' onClick={() => dispatch(scheduleParametersActions.addPerson())}>
+            <Button variant="dark" className='mt-4 w-25 mx-auto' onClick={() => dispatch(scheduleParametersActions.addPerson())}>
                 Add person
             </Button>
             <GenerateScheduleButton></GenerateScheduleButton>
         </Stack>
         <Schedule></Schedule>
-
 
     </>
   )
