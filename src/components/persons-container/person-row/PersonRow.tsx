@@ -61,7 +61,7 @@ export default function PersonRow({personIndex, person}: PersonRowProps) {
                                                 className='d-flex align-items-center p-0 icon-button ms-1 me-2'
                                                 onClick={() => dispatch(scheduleParametersActions.removeUnavailableDays(
                                                     {personIndex: personIndex, unavailableDaysIndex: index}))}>
-                                                <BsXCircleFill size='13' color='white'/>
+                                                <BsXCircleFill size='11' color='white'/>
                                             </Button>
                                         </Row>
                                     </Badge>

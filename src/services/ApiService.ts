@@ -55,8 +55,8 @@ export const ApiService = {
 
     getDefaultGeneticAlgorithmParameters: (): GeneticAlgorithmParametersRequestBody => {
         return {
-            seed: 8,
-            generations: 30,
+            seed: 3,
+            generations: 50,
             population_size: 500,
             crossover_rate: 0.7,
             mutation_rate: 0.3,
